@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/shopstyle.css" />
+  </head>
+  <body>
+    <header class="shopHeader">
+      <div class="shopheadercontainer">
+        <div class="shoplogoWraper">
+          <img src="../images/logoBalf.png" alt="" />
+          <p style="cursor: default">کیک بالف</p>
+        </div>
+        <div class="shoptoolbarWraper">
+          <ul>
+            <li><a href="#shopSection">فروشگاه</a></li>
+            <li><a href="">طراحی کیک</a></li>
+            <li><a href="">تماس با ما</a></li>
+            <li><a href="">درباره ما</a></li>
+          </ul>
+        </div>
+        <div class="shopiconsWraper">
+          <div class="cartPack">
+            <img src="../images/shopping.png" class="shopcart" alt="" />
+            <div class="cartProductnumbers">0</div>
+          </div>
+          <img src="../images/account.png" class="profile" alt="" />
+          <!-- ------------------  darkmode -->
+          <!-- From Uiverse.io by JustCode14 -->
+          <label class="switch">
+            <input id="checkbox" type="checkbox" />
+            <span class="slider">
+              <div class="star star_1"></div>
+              <div class="star star_2"></div>
+              <div class="star star_3"></div>
+              <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                <path
+                  transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+                  fill="#fff"
+                  d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                ></path>
+              </svg>
+            </span>
+          </label>
+
+          <!-- ------------------  darkmode -->
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="cakeshop">
+        <div class="Cakesliderwraper">
+          <div class="showmorecard">
+            <div class="cardImageContainer">
+              <img class="cardimage" src="../images/chocolatecake.jpg" alt="" />
+            </div>
+            <p class="title">کیک یخچالی</p>
+            <p class="disceription">کیک های اسفنجی با فیلینگ موز و گردو</p>
+            <div class="priceRate">
+              <p class="price">500,000 T</p>
+              <div class="ratearea">
+                <p class="rateNum">4.5</p>
+              </div>
+            </div>
+            <div class="buyAdd">
+              <button class="buyitem">خرید</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="desertShop">
+        <div class="sliderwraper">
+          <div class="showmorecard">
+            <div class="cardImageContainer">
+              <img class="cardimage" src="../images/chocolatecake.jpg" alt="" />
+            </div>
+            <p class="title">کیک یخچالی</p>
+            <p class="disceription">کیک های اسفنجی با فیلینگ موز و گردو</p>
+            <div class="priceRate">
+              <p class="price">500,000 T</p>
+              <div class="ratearea">
+                <p class="rateNum">4.5</p>
+              </div>
+            </div>
+            <div class="buyAdd">
+              <button class="buyitem">خرید</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../Js/shopJS.js"></script>
+
+     <!------------------------------------------ login start --->
+     <section class="loginPage">
+      <div class="loginContainer">
+        <span class="closelogin">×</span>
+        <form class="loginForm" action="">
+          <label for="username">نام کاربری</label>
+          <input
+          type="text"
+            name="username"
+            class="usernameLogin"
+            
+          />
+          <label for="password">رمزعبور</label>
+          <input
+            type="password"
+            name="password"
+            class="passwordLogin"
+            
+          />
+          <div class="loginbtns">
+            <input type="submit" value="ورود" class="loginBtn formBtn" />
+            <button type="button" class="createAcountBtn formBtn"> ساخت حساب کاربری
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!------------------------------------------ login End --->
+    <!------------------------------------------ signup start --->
+    <section class="signupPage">
+<div class="signupContainer">
+  <span class="closeSignup">×</span>
+  <form class="signupForm" action="">
+    <label for="username">نام کاربری</label>
+    <input
+    type="text"
+      name="username"
+      id="username"
+      class="usernameSignUp"
+      
+    />
+    <label for="password">رمزعبور</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      class="passwordSignUp"
+      
+      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+    title="رمز عبور حداقل ۸ کاراکتر و شامل حروف و عدد باشد"
+    />
+    <label for="email">ایمیل</label>
+    <input type="email" name="email" id="email" class="emailSignup"    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    title="لطفا ایمیل معتبر وارد کنید"
+    placeholder="example@email.com">
+    <label for="phone">شماره تماس</label>
+    <input type="tel" name="phone" id="phone" class="phoneSignup"  pattern="^09\d{9}$"
+    title="شماره تماس معتبر باید با 09 شروع شده و 11 رقم باشد"  placeholder="۰۹xxxxxxxxx"   pattern="^09[0-9]{9}$">
+    <div class="signupbtns">
+      <input type="submit" value="ثبت نام" class="signupBtn formBtn"  />
+      </button>
+    </div>
+    <p>با ثبت نام شما <a href="./pages/rules.html" target="_blank">قوانین و شرایط</a> رو میپذیرید</p>
+  </form>
+</div>
+
+    </section>
+    <!------------------------------------------ signup End --->
+  </body>
+</html>
