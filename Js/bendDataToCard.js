@@ -1,8 +1,7 @@
 import createcard from "./createcard.js";
-function bend(data) {
-  // const list = extendshop ? data :data.slice(0,4);
+function bend(data,userchoose) {
   data.forEach((element) => {
-    createcard(element);
+    createcard(element,userchoose);
   });
 }
 export default bend;

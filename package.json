@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@spectrum-web-components/badge": "^1.11.2"
+  }
+}

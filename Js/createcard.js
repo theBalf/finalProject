@@ -1,9 +1,11 @@
-function createcard(data) {
-  const slider = document.querySelector(".Cakesliderwraper");
+function createcard(data, userchoose) {
+  const slider = document.querySelector(`.${userchoose}`);
   const imgData = data.image_url;
   const titleData = data.name;
   const descriptionData = data.description;
   const priceData = data.price;
+  const category = data.category;
+  const productID = data.id;
   //   ==========================
   const cardWraper = document.createElement("div");
   cardWraper.classList.add("cardWraper");
@@ -14,7 +16,7 @@ function createcard(data) {
   const image = document.createElement("img");
   image.setAttribute("src", imgData);
   image.classList.add("cardimage");
-  const title = document.createElement("p");
+  const title = document.createElement("h3");
   title.innerText = titleData;
   title.classList.add("title");
   const description = document.createElement("p");
@@ -37,6 +39,11 @@ function createcard(data) {
   buyBtn.classList.add("buyitem");
   const btnTxt = document.createElement("p");
   btnTxt.innerText = "خرید";
+  btnTxt.classList.add("buyBtnTxt");
+  // btnTxt.classList.add(`${category}-${productID}`);
+  // console.log(`${category}-${productID}`);
+buyBtn.dataset.id = productID;
+buyBtn.dataset.category = category
   //=================================append
 
   slider.appendChild(cardWraper);
@@ -53,6 +60,5 @@ function createcard(data) {
   btnArea.appendChild(buyBtn);
   buyBtn.appendChild(btnTxt);
 }
-
 
 export default createcard;

@@ -22,16 +22,13 @@
         <div class="toolbarWraper">
           <ul>
             <li><a href="#shopSection">فروشگاه</a></li>
-            <li><a href="">طراحی کیک</a></li>
-            <li><a href="">تماس با ما</a></li>
-            <li><a href="">درباره ما</a></li>
+            <li><a href="./pages/createCake.html">طراحی کیک</a></li>
+            <li><a href="#footer">تماس با ما</a></li>
+            <li><a href="#footer">درباره ما</a></li>
           </ul>
         </div>
         <div class="iconsWraper">
-          <div class="cartPack">
-            <img src="../images/shopping.png" class="shopcart" alt="" />
-            <div class="cartProductnumbers">5</div>
-        </div>          <img src="images/account.png" class="profile" alt="" />
+       
           <!-- ------------------  darkmode -->
           <!-- From Uiverse.io by JustCode14 -->
           <label class="switch">
@@ -66,15 +63,19 @@
           خودت همه رو مشخص کن و هنرنمایی خودت رو نشون بده
         </p>
         <div class="heroText_buttons">
-          <button class="createCakeHeroBTN btn">
-            <img src="./images/choclateBGcut.png" class="hoverimg" alt="" />
-            شروع طراحی کیک
-          </button>
-          <button class="cakeGalleryBTN btn">
-            <img src="./images/choclateBGcut.png" class="hoverimg" alt="" />
-
-            مشاهده گالری
-          </button>
+          <a href="./pages/createCake.html">
+            <button class="createCakeHeroBTN btn">
+              <img src="./images/choclateBGcut.png" class="hoverimg" alt="" />
+              شروع طراحی کیک
+            </button>
+          </a>
+          <a href="./pages/createCake.html">
+            <button class="cakeGalleryBTN btn">
+              <img src="./images/choclateBGcut.png" class="hoverimg" alt="" />
+  
+              مشاهده گالری
+            </button>
+          </a>
         </div>
         <div class="heroBadges"></div>
       </div>
@@ -179,7 +180,9 @@
               <p class="title">کیک های آماده</p>
               <p class="description">مناسب برای جشن ها و مراسمات</p>
             </div>
-            <button class="shopCardBTN btn">رفتن به فروشگاه کیک</button>
+            <a href="./pages/shop.html#cakeshop" target="_blank">
+              <button class="shopCardBTN btn">رفتن به فروشگاه کیک</button>
+            </a>
           </div>
           <div class="shopdesert shopcard">
             <div class="heart"></div>
@@ -188,7 +191,8 @@
               <p class="title">دسر</p>
               <p class="description">انواع دسر تازه</p>
             </div>
-            <button class="shopCardBTN btn">رفتن به فروشگاه دسر</button>
+            <a href="./pages/shop.html#dessertshop">  <button class="shopCardBTN btn">رفتن به فروشگاه دسر</button></a>
+          
           </div>
           <div class="shopsweet shopcard">
             <div class="heart"></div>
@@ -197,7 +201,8 @@
               <p class="title">شیرینی</p>
               <p class="description">انواع شیرینی جذاب</p>
             </div>
-            <button class="shopCardBTN btn">رفتن به فروشگاه شیرینی</button>
+            <a href="./pages/shop.html#sweetshop">  <button class="shopCardBTN btn">رفتن به فروشگاه شیرینی</button></a>
+          
           </div>
           <div class="shopdesign shopcard">
             <div class="heart"></div>
@@ -206,7 +211,8 @@
               <p class="title">تزئینات تولد</p>
               <p class="description">انواع تزئین برای مراسمات</p>
             </div>
-            <button class="shopCardBTN btn">رفتن به فروشگاه تزئینات</button>
+            <a href="./pages/shop.html#decoration"><button class="shopCardBTN btn">رفتن به فروشگاه تزئینات</button>
+            </a>
           </div>
         </div>
       </div>
@@ -225,7 +231,7 @@
     </section>
     <!------------------------------------------ create End --->
     <!------------------------------------------------------------ footer start --->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footerWrapper">
         <div class="brandFooter">
           <div class="logoDue">
@@ -257,6 +263,6 @@
       <p class="rights">© ۱۴۰۴ بالف کیک . تمامی حقوق محفوظ است.</p>
     </footer>
     <!------------------------------------------ footer End --->
-    <script src="./mainjs.js" type="module"></script>
+    <script src="./mainjs.js" type="module" ></script>
   </body>
 </html>
