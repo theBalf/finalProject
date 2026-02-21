@@ -177,6 +177,11 @@ body {
 .toolbarWraper {
   width: 100%;
 }
+.hamMenu {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  display: none;
+}
 .toolbarWraper ul {
   width: 100%;
   display: flex;
@@ -202,12 +207,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  position: relative;
 }
 .iconsWraper img {
   width: 40px;
   height: 40px;
   flex-basis: 25px;
   filter: brightness(0);
+  cursor: pointer;
+}
+.cartPack {
+  position: relative;
   cursor: pointer;
 }
 .cartProductnumbers {
@@ -231,6 +241,21 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 760px) {
+  .hamMenu {
+    display: block;
+  }
+  .toolbarWraper {
+    background-color: red;
+    position: absolute;
+  }
+  .toolbarWraper > ul {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
 /* ======================================header end */
 /* ============================================  Hero start */
 .heroContainer {
@@ -484,6 +509,15 @@ body {
 }
 /* ***************************** breakSpace end */
 /* ***************************** shop start */
+@media (max-width: 1185px) {
+  .shopBar {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+  .shopcard > .cardImg {
+    width: 190px;
+    height: 190px;
+  }
+}
 .textShop {
   font-family: "shabnamB";
   font-size: 2rem;
@@ -496,6 +530,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+  margin: auto;
 }
 .shopBar:hover .shopcard:not(:hover) {
   opacity: 0.5;
@@ -504,7 +539,7 @@ body {
 .shopBar > .shopcard {
   max-width: 300px;
   height: fit-content;
-  background-color: #ffd3bf;
+  background-color: #f5a369;
   padding: 1rem 0;
   border-radius: 1rem;
   display: flex;
@@ -516,7 +551,7 @@ body {
 }
 .shopcard:hover {
   transform: translateY(-3%);
-  box-shadow: 0 0 10px rgba(178, 16, 116, 0.7);
+  box-shadow: 0 0 10px 1px #f06c0f;
 }
 .shopcard > .cardImg {
   width: 250px;
@@ -550,15 +585,15 @@ body {
   font-family: "shabnamL";
   font-size: 1.25rem;
   color: #fff5eb;
-  background-color: #e8114e;
+  background-color: #3e1c05;
 }
-/* ***************************** shop end */
-/* ******************************************** Create start */
+
+/* ***************************** shop end */ /* ******************************************** Create start */
 .createCake {
   margin-top: 5rem;
   width: 100%;
   height: 350px;
-  background-color: #671a1a;
+  background-color: #762500;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -594,7 +629,7 @@ body {
 .footer {
   width: 100%;
   min-height: 300px;
-  background-color: rgb(36, 8, 1);
+  background-color: #3b1402;
 }
 .footerWrapper {
   display: grid;
@@ -734,4 +769,37 @@ body.dark-mode .footer {
 body.dark-mode .cartProductnumbers {
   background-color: #ff3b3b;
   color: #fff;
+}
+/* ==========================responsive */
+/* ************************************************header */
+
+/* ***********************************shop */
+@media (max-width: 1185px) {
+  .shopBar {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+
+  .shopcard > .cardImg {
+    width: 190px;
+    height: 190px;
+  }
+  .textCard > .description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .shopcard > a > .shopCardBTN {
+    font-size: 1.2 rem;
+    padding: 0.2rem 0.7rem;
+    font-family: "shabnamL";
+  }
+}
+@media (max-width: 917px) {
+  .shopBar {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .shopcard {
+    width: 200px;
+  }
 }

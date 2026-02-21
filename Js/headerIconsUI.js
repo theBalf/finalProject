@@ -7,9 +7,9 @@ function pageHeaderUI() {
     console.log("signUser", usersession);
     let isLOGIN = JSON.parse(localStorage.getItem("loginStatus"));
     console.log("loginstatus", isLOGIN);
-
+    cartManager.cartIconCreate();
+    
     document.addEventListener("DOMContentLoaded", () => {
-      cartManager.cartIconCreate();
       document.querySelector(".profile").addEventListener("click", (e) => {
         e.preventDefault();
         loginAction.openForm(document.querySelector(".loginPage"));

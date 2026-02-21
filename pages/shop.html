@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../styles/shopstyle.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
   </head>
   <body>
     <header class="shopHeader">
@@ -44,25 +51,97 @@
       </div>
     </header>
     <main class="main">
-      <section class="shop" >
-        <div class="cakeshop shopcard" id="cakeshop">
-          <h3>کیک </h3><br>
+      <section class="shop">
+    
+        <!-- ===================== CAKE ===================== -->
+        <div class="shopcard" id="cakeshop">
+          <h3>کیک</h3><br>
+    
+          <div class="cakeshop innershop">
+    
+            <div class="swiper cakesSwiper">
+              <div class="swiper-wrapper"></div>
+    
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+    
+            <div class="morecard cakeMorecard">
+              <p>دیدن همه</p>
+            </div>
+    
+          </div>
         </div>
-        <div class="dessertshop shopcard"  id="dessertshop">
-                  <h3>دسر </h3><br>
-  
+    
+    
+        <!-- ===================== DESSERT ===================== -->
+        <div class="shopcard" id="dessertshop">
+          <h3>دسر</h3><br>
+          
+          <div class="dessertshop innershop">
+    
+            <div class="swiper dessertSwiper">
+              <div class="swiper-wrapper"></div>
+    
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="dessertMorecard morecard">
+              <p>دیدن همه</p>
+            </div>
+          </div>
         </div>
-        <div class="sweetshop shopcard"  id="sweetshop">
-                  <h3>شیرینی </h3><br>
-  
+    
+    
+        <!-- ===================== SWEET ===================== -->
+        <div class="shopcard" id="sweetshop">
+          <h3>شیرینی</h3><br>
+    
+          <div class="sweetshop innershop">
+    
+            <div class="swiper sweetSwiper">
+              <div class="swiper-wrapper"></div>
+    
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+    
+            <div class="sweetMorecard morecard">
+              <p>دیدن همه</p>
+            </div>
+    
+          </div>
         </div>
-        <div class="decoration shopcard"  id="decoration">
-                  <h3>تزئینات </h3><br>
-  
+    
+    
+        <!-- ===================== DECORATION ===================== -->
+        <div class="shopcard" id="decoration">
+          <h3>تزئینات</h3><br>
+    
+          <div class="decoration innershop">
+    
+            <div class="swiper decorationSwiper">
+              <div class="swiper-wrapper"></div>
+    
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+    
+            <div class="decorationMorecard morecard">
+              <p>دیدن همه</p>
+            </div>
+    
+          </div>
         </div>
+    
       </section>
     </main>
-    <script type="module" src="../Js/shopJS.js"></script>
+    
+   
 
      <!------------------------------------------ login start --->
      <section class="loginPage">
@@ -131,7 +210,49 @@
 </div>
 
     </section>
-    <!------------------------------------------ signup End --->
+
+    <!-- ------------------------------------cart -->
+    <div class="cartContainer empty">
+      <div class="cartWrapper">
+        <h4>سبد خرید شما</h4>
+        <img src="../images/close.png" class="closeIconForCart" alt="close">
     
+        <!-- محصولات -->
+        <div class="itemsSection">
+          <img src="../images/EmptyCart.png" class="emptyImage" alt="">
+          <p class="emptyCart">سبد خرید شما خالی است</p>
+          <div class="bendingSpace"></div>
+         
+        </div>
+    
+        <!-- جمع کل و خلاصه -->
+        <div class="summarySection">
+          <div class="prices">
+            <p class="totalPrice hidden"></p>
+            <p class="finalPrice"></p>
+          </div>
+          <p class="clientBenefit hidden">شما از این خرید <br>
+            <span class="clientBenefitVariableTxt hidden"></span><br>
+            تخفیف دریافت کردید</p>
+        </div>
+    
+        <!-- دکمه‌ها -->
+        <div class="actionsSection">
+          <button class="btn-continue">ادامه خرید</button>
+        <a href="./pay.html"> <button class="btn-checkout">تسویه حساب</button></a> 
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------cart end -->
+    <!------------------------------------------ signup End --->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script type="module" src="../Js/toastify.js"></script>
+
+    <script type="module" src="../Js/shopJS.js"></script>
+
   </body>
 </html>

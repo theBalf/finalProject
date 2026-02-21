@@ -6,4 +6,7 @@ function mainpageActions() {
     headerIconsUI.headerIconsAction();
     darkmode;
   }
+  return {UIActions}
 }
+const mainpageAction = mainpageActions();
+export default mainpageAction;

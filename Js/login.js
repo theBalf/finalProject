@@ -3,10 +3,7 @@ function loginBehaviour() {
     const loginStatus = JSON.parse(localStorage.getItem("loginStatus"));
     if (loginStatus && loginStatus === true) {
       let profilepath = "../pages/profile.html";
-      // const curentpath = window.location.pathname;
-      // if (curentpath.includes("/folder/")) {
-      //   profilepath = "./pages/profile.html";
-      // }
+      
       window.open(profilepath);
     } else {
       form.classList.add("activelogin");

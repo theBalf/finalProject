@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>فاکتور خرید</title>
+    <link rel="stylesheet" href="../styles/payPage.css" />
+  </head>
+  <body>
+    <div class="invoice-container">
+      <h1>فاکتور خرید</h1>
+
+      <div id="invoiceItems"></div>
+
+      <div class="summary">
+        <p>جمع کل: <span id="totalPrice"></span></p>
+        <p>تخفیف: <span id="discount"></span></p>
+        <hr />
+        <br />
+        <p>مبلغ نهایی: <span id="finalPrice"></span></p>
+      </div>
+
+      <div class="actions">
+        <a href="./shop.html"
+          ><button class="back-btn" >برگشت</button></a
+        >
+        <a href="./shopDone.html" 
+          ><button class="pay-btn" onclick="payNow()">پرداخت</button></a
+        >
+      </div>
+
+      <div id="emptyMessage" class="empty"></div>
+    </div>
+
+    <script type="module" src="../Js/pay.js"></script>
+  </body>
+</html>

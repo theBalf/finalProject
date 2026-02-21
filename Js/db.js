@@ -4,16 +4,17 @@ const serverData = {
   limit: 50,
   total: 86,
   data: {
-    cakes:[
+    cakes: [
       // ===== 4 محصول اول برای پیش نمایش =====
       {
         id: 1,
         name: "کیک تولدی یک طبقه وانیلی",
         category: "cake",
         price: 420000,
-        discount: 0,
+        discount: 0.2,
         stock: 10,
-        description: "کیک تولدی یک طبقه وانیلی با فیلینگ موز و گردو، مناسب جشن‌های کوچک و پیش‌نمایش",
+        description:
+          "کیک تولدی یک طبقه وانیلی با فیلینگ موز و گردو، مناسب جشن‌های کوچک و پیش‌نمایش",
         image_url: "/images/cakes/cake1.jpg",
         active: true,
       },
@@ -24,7 +25,8 @@ const serverData = {
         price: 450000,
         discount: 0,
         stock: 8,
-        description: "کیک تولد بچگانه با طرح شخصیت السا، با لایه‌های کرم وانیل و تزئینات فوندانت",
+        description:
+          "کیک تولد بچگانه با طرح شخصیت السا، با لایه‌های کرم وانیل و تزئینات فوندانت",
         image_url: "/images/cakes/cake2.jpg",
         active: true,
       },
@@ -35,7 +37,8 @@ const serverData = {
         price: 650000,
         discount: 0,
         stock: 5,
-        description: "کیک چند طبقه با لایه‌های کرم و میوه تازه، مناسب جشن‌ها و مراسم خاص، تزئینات متنوع و شیک",
+        description:
+          "کیک چند طبقه با لایه‌های کرم و میوه تازه، مناسب جشن‌ها و مراسم خاص، تزئینات متنوع و شیک",
         image_url: "/images/cakes/cake3.jpg",
         active: true,
       },
@@ -46,11 +49,12 @@ const serverData = {
         price: 380000,
         discount: 0,
         stock: 12,
-        description: "کیک تولد خانگی با پایه کیک اسفنجی و فیلینگ میوه، بدون خامه، سبک و خانگی",
+        description:
+          "کیک تولد خانگی با پایه کیک اسفنجی و فیلینگ میوه، بدون خامه، سبک و خانگی",
         image_url: "/images/cakes/cake4.jpg",
         active: true,
       },
-    
+
       // ===== 20 کیک تولد متنوع =====
       {
         id: 5,
@@ -59,7 +63,8 @@ const serverData = {
         price: 440000,
         discount: 0,
         stock: 10,
-        description: "کیک تولد با لایه موز تازه و گردو، رویه کرم و تزئینات شکری رنگی",
+        description:
+          "کیک تولد با لایه موز تازه و گردو، رویه کرم و تزئینات شکری رنگی",
         image_url: "/images/cakes/cake5.jpg",
         active: true,
       },
@@ -70,7 +75,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 9,
-        description: "کیک تولد وانیلی با تزئینات فوندانت، مناسب جشن‌های خانوادگی",
+        description:
+          "کیک تولد وانیلی با تزئینات فوندانت، مناسب جشن‌های خانوادگی",
         image_url: "/images/cakes/cake6.jpg",
         active: true,
       },
@@ -81,7 +87,8 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 8,
-        description: "کیک یک طبقه با لایه شکلاتی و توت تازه، تزئینات رنگی و جذاب",
+        description:
+          "کیک یک طبقه با لایه شکلاتی و توت تازه، تزئینات رنگی و جذاب",
         image_url: "/images/cakes/cake7.jpg",
         active: true,
       },
@@ -103,7 +110,8 @@ const serverData = {
         price: 480000,
         discount: 0,
         stock: 6,
-        description: "کیک تولد گرد با روکش شکلاتی و تزئینات شکلاتی و شکوفه‌های فوندانت",
+        description:
+          "کیک تولد گرد با روکش شکلاتی و تزئینات شکلاتی و شکوفه‌های فوندانت",
         image_url: "/images/cakes/cake9.jpg",
         active: true,
       },
@@ -114,7 +122,8 @@ const serverData = {
         price: 490000,
         discount: 0,
         stock: 5,
-        description: "کیک یک طبقه با لایه‌های رنگین کمانی، کرم وانیل و تزئینات شاد برای کودکان",
+        description:
+          "کیک یک طبقه با لایه‌های رنگین کمانی، کرم وانیل و تزئینات شاد برای کودکان",
         image_url: "/images/cakes/cake10.jpg",
         active: true,
       },
@@ -125,7 +134,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 8,
-        description: "کیک تولد با موز تازه و کرم رنگی، تزئینات جشن تولد کودکانه",
+        description:
+          "کیک تولد با موز تازه و کرم رنگی، تزئینات جشن تولد کودکانه",
         image_url: "/images/cakes/cake11.jpg",
         active: true,
       },
@@ -147,7 +157,8 @@ const serverData = {
         price: 480000,
         discount: 0,
         stock: 5,
-        description: "کیک یک طبقه با لایه‌های میوه تازه و کرم شکلاتی، تزئینات رنگی و جذاب",
+        description:
+          "کیک یک طبقه با لایه‌های میوه تازه و کرم شکلاتی، تزئینات رنگی و جذاب",
         image_url: "/images/cakes/cake13.jpg",
         active: true,
       },
@@ -158,7 +169,8 @@ const serverData = {
         price: 450000,
         discount: 0,
         stock: 10,
-        description: "کیک تولد خانگی با پایه اسفنجی و لایه کرم شکلاتی، سبک و خوشمزه",
+        description:
+          "کیک تولد خانگی با پایه اسفنجی و لایه کرم شکلاتی، سبک و خوشمزه",
         image_url: "/images/cakes/cake14.jpg",
         active: true,
       },
@@ -169,7 +181,8 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 7,
-        description: "کیک با تزئین فوندانت حیوانات و لایه کرم وانیل، مناسب جشن کودکانه",
+        description:
+          "کیک با تزئین فوندانت حیوانات و لایه کرم وانیل، مناسب جشن کودکانه",
         image_url: "/images/cakes/cake15.jpg",
         active: true,
       },
@@ -180,7 +193,8 @@ const serverData = {
         price: 480000,
         discount: 0,
         stock: 6,
-        description: "کیک یک طبقه با کرم شکلات و لایه کارامل، تزئینات شکلاتی و جذاب",
+        description:
+          "کیک یک طبقه با کرم شکلات و لایه کارامل، تزئینات شکلاتی و جذاب",
         image_url: "/images/cakes/cake16.jpg",
         active: true,
       },
@@ -191,7 +205,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 9,
-        description: "کیک تولد یک طبقه با کرم وانیل و تزئینات شکلات سفید و رنگی",
+        description:
+          "کیک تولد یک طبقه با کرم وانیل و تزئینات شکلات سفید و رنگی",
         image_url: "/images/cakes/cake17.jpg",
         active: true,
       },
@@ -202,7 +217,8 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 8,
-        description: "کیک تولد با موز و توت فرنگی تازه، تزئینات شاد و جذاب کودکانه",
+        description:
+          "کیک تولد با موز و توت فرنگی تازه، تزئینات شاد و جذاب کودکانه",
         image_url: "/images/cakes/cake18.jpg",
         active: true,
       },
@@ -224,11 +240,12 @@ const serverData = {
         price: 480000,
         discount: 0,
         stock: 7,
-        description: "کیک تولد با فوندانت طرح خرس و لایه کرم وانیل، مناسب جشن کودکان",
+        description:
+          "کیک تولد با فوندانت طرح خرس و لایه کرم وانیل، مناسب جشن کودکان",
         image_url: "/images/cakes/cake20.jpg",
         active: true,
       },
-    
+
       // ===== کیک دخترونه 20 تا (id 21 تا 40) =====
       {
         id: 21,
@@ -237,7 +254,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 8,
-        description: "کیک یک طبقه با تزئین پروانه‌های فوندانت و کرم وانیل، مناسب تولد دخترانه",
+        description:
+          "کیک یک طبقه با تزئین پروانه‌های فوندانت و کرم وانیل، مناسب تولد دخترانه",
         image_url: "/images/cakes/cake21.jpg",
         active: true,
       },
@@ -248,7 +266,8 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 6,
-        description: "کیک یک طبقه با کرم وانیل و تزئینات تاج فوندانت رنگی، مناسب جشن دختران",
+        description:
+          "کیک یک طبقه با کرم وانیل و تزئینات تاج فوندانت رنگی، مناسب جشن دختران",
         image_url: "/images/cakes/cake22.jpg",
         active: true,
       },
@@ -281,7 +300,8 @@ const serverData = {
         price: 500000,
         discount: 0,
         stock: 4,
-        description: "کیک یک طبقه با کرم و تزئینات الماس فوندانت، مناسب جشن دخترانه",
+        description:
+          "کیک یک طبقه با کرم و تزئینات الماس فوندانت، مناسب جشن دخترانه",
         image_url: "/images/cakes/cake25.jpg",
         active: true,
       },
@@ -292,7 +312,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 8,
-        description: "کیک یخچالی یک طبقه با کرم وانیل و میوه تازه، مناسب دختران",
+        description:
+          "کیک یخچالی یک طبقه با کرم وانیل و میوه تازه، مناسب دختران",
         image_url: "/images/cakes/cake26.jpg",
         active: true,
       },
@@ -303,7 +324,8 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 7,
-        description: "کیک یک طبقه با کرم و تزئینات جشن تولد، فوندانت رنگی و تزئین شکلاتی",
+        description:
+          "کیک یک طبقه با کرم و تزئینات جشن تولد، فوندانت رنگی و تزئین شکلاتی",
         image_url: "/images/cakes/cake27.jpg",
         active: true,
       },
@@ -314,7 +336,8 @@ const serverData = {
         price: 480000,
         discount: 0,
         stock: 6,
-        description: "کیک یک طبقه با لایه‌های رنگین کمانی، کرم و تزئینات شکوفه فوندانت",
+        description:
+          "کیک یک طبقه با لایه‌های رنگین کمانی، کرم و تزئینات شکوفه فوندانت",
         image_url: "/images/cakes/cake28.jpg",
         active: true,
       },
@@ -347,7 +370,8 @@ const serverData = {
         price: 480000,
         discount: 0,
         stock: 5,
-        description: "کیک یخچالی با لایه کرم وانیل و توت فرنگی تازه، تزئینات ساده و زیبا",
+        description:
+          "کیک یخچالی با لایه کرم وانیل و توت فرنگی تازه، تزئینات ساده و زیبا",
         image_url: "/images/cakes/cake31.jpg",
         active: true,
       },
@@ -358,7 +382,8 @@ const serverData = {
         price: 490000,
         discount: 0,
         stock: 4,
-        description: "کیک تولد یک طبقه با کرم و تزئینات شاد و رنگی، مناسب جشن دختران",
+        description:
+          "کیک تولد یک طبقه با کرم و تزئینات شاد و رنگی، مناسب جشن دختران",
         image_url: "/images/cakes/cake32.jpg",
         active: true,
       },
@@ -369,7 +394,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 6,
-        description: "کیک یک طبقه با لایه کرم وانیل و تزئینات شکلاتی، سبک و خوشمزه",
+        description:
+          "کیک یک طبقه با لایه کرم وانیل و تزئینات شکلاتی، سبک و خوشمزه",
         image_url: "/images/cakes/cake33.jpg",
         active: true,
       },
@@ -406,7 +432,7 @@ const serverData = {
         image_url: "/images/cakes/cake36.jpg",
         active: true,
       },
-    
+
       // ===== کیک پسرونه 20 تا (id 37 تا 56) =====
       {
         id: 37,
@@ -415,7 +441,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 8,
-        description: "کیک یک طبقه با طرح ماشین مسابقه، تزئینات فوندانت و کرم وانیل",
+        description:
+          "کیک یک طبقه با طرح ماشین مسابقه، تزئینات فوندانت و کرم وانیل",
         image_url: "/images/cakes/cake37.jpg",
         active: true,
       },
@@ -426,7 +453,8 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 7,
-        description: "کیک با طرح ابرقهرمان، لایه کرم و تزئینات رنگی، مناسب جشن پسرانه",
+        description:
+          "کیک با طرح ابرقهرمان، لایه کرم و تزئینات رنگی، مناسب جشن پسرانه",
         image_url: "/images/cakes/cake38.jpg",
         active: true,
       },
@@ -547,7 +575,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 6,
-        description: "کیک یک طبقه با طرح کشتی دزدان دریایی، تزئینات فوندانت و کرم وانیل",
+        description:
+          "کیک یک طبقه با طرح کشتی دزدان دریایی، تزئینات فوندانت و کرم وانیل",
         image_url: "/images/cakes/cake49.jpg",
         active: true,
       },
@@ -558,7 +587,8 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 5,
-        description: "کیک یک طبقه با طرح ابرقهرمان و لایه شکلاتی، مناسب جشن پسرانه",
+        description:
+          "کیک یک طبقه با طرح ابرقهرمان و لایه شکلاتی، مناسب جشن پسرانه",
         image_url: "/images/cakes/cake50.jpg",
         active: true,
       },
@@ -580,7 +610,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 6,
-        description: "کیک یک طبقه با طرح ستاره و کرم رنگی، تزئینات جشن تولد پسرانه",
+        description:
+          "کیک یک طبقه با طرح ستاره و کرم رنگی، تزئینات جشن تولد پسرانه",
         image_url: "/images/cakes/cake52.jpg",
         active: true,
       },
@@ -613,7 +644,8 @@ const serverData = {
         price: 490000,
         discount: 0,
         stock: 4,
-        description: "کیک یک طبقه با طرح ماشین آتش‌نشانی و کرم و تزئینات فوندانت",
+        description:
+          "کیک یک طبقه با طرح ماشین آتش‌نشانی و کرم و تزئینات فوندانت",
         image_url: "/images/cakes/cake55.jpg",
         active: true,
       },
@@ -628,7 +660,7 @@ const serverData = {
         image_url: "/images/cakes/cake56.jpg",
         active: true,
       },
-    
+
       // ===== کیک چند طبقه مراسمات 10 تا (id 57 تا 66) =====
       {
         id: 57,
@@ -637,7 +669,8 @@ const serverData = {
         price: 650000,
         discount: 0,
         stock: 5,
-        description: "کیک دو طبقه با لایه‌های میوه تازه و کرم و تزئینات شیک مناسب جشن‌ها",
+        description:
+          "کیک دو طبقه با لایه‌های میوه تازه و کرم و تزئینات شیک مناسب جشن‌ها",
         image_url: "/images/cakes/cake57.jpg",
         active: true,
       },
@@ -648,7 +681,8 @@ const serverData = {
         price: 720000,
         discount: 0,
         stock: 4,
-        description: "کیک سه طبقه با کرم شکلات و تزئینات فوندانت، مناسب مراسم خاص",
+        description:
+          "کیک سه طبقه با کرم شکلات و تزئینات فوندانت، مناسب مراسم خاص",
         image_url: "/images/cakes/cake58.jpg",
         active: true,
       },
@@ -681,7 +715,8 @@ const serverData = {
         price: 660000,
         discount: 0,
         stock: 4,
-        description: "کیک دو طبقه با کرم وانیل و تزئین شکلات سفید، مناسب جشن‌های شیک",
+        description:
+          "کیک دو طبقه با کرم وانیل و تزئین شکلات سفید، مناسب جشن‌های شیک",
         image_url: "/images/cakes/cake61.jpg",
         active: true,
       },
@@ -692,7 +727,8 @@ const serverData = {
         price: 740000,
         discount: 0,
         stock: 3,
-        description: "کیک سه طبقه با کرم رنگی و تزئینات فوندانت، مناسب جشن و مراسم خاص",
+        description:
+          "کیک سه طبقه با کرم رنگی و تزئینات فوندانت، مناسب جشن و مراسم خاص",
         image_url: "/images/cakes/cake62.jpg",
         active: true,
       },
@@ -725,7 +761,8 @@ const serverData = {
         price: 680000,
         discount: 0,
         stock: 4,
-        description: "کیک دو طبقه با تزئین گل‌های خوراکی و کرم وانیل، مناسب مراسمات",
+        description:
+          "کیک دو طبقه با تزئین گل‌های خوراکی و کرم وانیل، مناسب مراسمات",
         image_url: "/images/cakes/cake65.jpg",
         active: true,
       },
@@ -736,11 +773,12 @@ const serverData = {
         price: 760000,
         discount: 0,
         stock: 3,
-        description: "کیک سه طبقه با لایه موز و توت فرنگی تازه، تزئینات جشن رنگی",
+        description:
+          "کیک سه طبقه با لایه موز و توت فرنگی تازه، تزئینات جشن رنگی",
         image_url: "/images/cakes/cake66.jpg",
         active: true,
       },
-    
+
       // ===== کیک خانگی بدون خامه 10 تا (id 67 تا 76) =====
       {
         id: 67,
@@ -749,7 +787,8 @@ const serverData = {
         price: 380000,
         discount: 0,
         stock: 10,
-        description: "کیک خانگی با لایه موز و کرم سبک، بدون خامه، مناسب میان وعده",
+        description:
+          "کیک خانگی با لایه موز و کرم سبک، بدون خامه، مناسب میان وعده",
         image_url: "/images/cakes/cake67.jpg",
         active: true,
       },
@@ -760,7 +799,8 @@ const serverData = {
         price: 390000,
         discount: 0,
         stock: 9,
-        description: "کیک خانگی با لایه گردو و کرم سبک، بدون خامه، خوشمزه و سبک",
+        description:
+          "کیک خانگی با لایه گردو و کرم سبک، بدون خامه، خوشمزه و سبک",
         image_url: "/images/cakes/cake68.jpg",
         active: true,
       },
@@ -771,7 +811,8 @@ const serverData = {
         price: 400000,
         discount: 0,
         stock: 8,
-        description: "کیک خانگی بدون خامه با لایه شکلاتی، سبک و خوشمزه برای میان وعده",
+        description:
+          "کیک خانگی بدون خامه با لایه شکلاتی، سبک و خوشمزه برای میان وعده",
         image_url: "/images/cakes/cake69.jpg",
         active: true,
       },
@@ -782,7 +823,8 @@ const serverData = {
         price: 380000,
         discount: 0,
         stock: 10,
-        description: "کیک خانگی با لایه میوه تازه و کرم سبک، بدون خامه، خوشمزه و سالم",
+        description:
+          "کیک خانگی با لایه میوه تازه و کرم سبک، بدون خامه، خوشمزه و سالم",
         image_url: "/images/cakes/cake70.jpg",
         active: true,
       },
@@ -793,7 +835,8 @@ const serverData = {
         price: 390000,
         discount: 0,
         stock: 9,
-        description: "کیک خانگی با لایه توت فرنگی و کرم سبک، بدون خامه، مناسب میان وعده",
+        description:
+          "کیک خانگی با لایه توت فرنگی و کرم سبک، بدون خامه، مناسب میان وعده",
         image_url: "/images/cakes/cake71.jpg",
         active: true,
       },
@@ -815,7 +858,8 @@ const serverData = {
         price: 410000,
         discount: 0,
         stock: 7,
-        description: "کیک خانگی با کرم شکلاتی و گردو، بدون خامه، مناسب میان وعده",
+        description:
+          "کیک خانگی با کرم شکلاتی و گردو، بدون خامه، مناسب میان وعده",
         image_url: "/images/cakes/cake73.jpg",
         active: true,
       },
@@ -826,7 +870,8 @@ const serverData = {
         price: 420000,
         discount: 0,
         stock: 6,
-        description: "کیک خانگی با لایه موز و توت فرنگی تازه، بدون خامه، سبک و خوشمزه",
+        description:
+          "کیک خانگی با لایه موز و توت فرنگی تازه، بدون خامه، سبک و خوشمزه",
         image_url: "/images/cakes/cake74.jpg",
         active: true,
       },
@@ -837,7 +882,8 @@ const serverData = {
         price: 430000,
         discount: 0,
         stock: 5,
-        description: "کیک خانگی با کرم وانیل و تزئین شکلات سفید، بدون خامه، سبک و خوشمزه",
+        description:
+          "کیک خانگی با کرم وانیل و تزئین شکلات سفید، بدون خامه، سبک و خوشمزه",
         image_url: "/images/cakes/cake75.jpg",
         active: true,
       },
@@ -848,11 +894,12 @@ const serverData = {
         price: 440000,
         discount: 0,
         stock: 4,
-        description: "کیک خانگی با موز تازه و کرم رنگی، بدون خامه، سبک و خوشمزه",
+        description:
+          "کیک خانگی با موز تازه و کرم رنگی، بدون خامه، سبک و خوشمزه",
         image_url: "/images/cakes/cake76.jpg",
         active: true,
       },
-    
+
       // ===== باقی کیک‌ها متنوع فروشگاهی 4 تا (id 77 تا 80) =====
       {
         id: 77,
@@ -861,7 +908,8 @@ const serverData = {
         price: 420000,
         discount: 0,
         stock: 10,
-        description: "کیک فروشگاهی با کرم وانیل ساده و تزئینات رنگی، سبک و خوشمزه",
+        description:
+          "کیک فروشگاهی با کرم وانیل ساده و تزئینات رنگی، سبک و خوشمزه",
         image_url: "/images/cakes/cake77.jpg",
         active: true,
       },
@@ -883,7 +931,8 @@ const serverData = {
         price: 460000,
         discount: 0,
         stock: 8,
-        description: "کیک فروشگاهی با لایه‌های رنگین کمانی و کرم وانیل، تزئینات جذاب",
+        description:
+          "کیک فروشگاهی با لایه‌های رنگین کمانی و کرم وانیل، تزئینات جذاب",
         image_url: "/images/cakes/cake79.jpg",
         active: true,
       },
@@ -894,12 +943,11 @@ const serverData = {
         price: 470000,
         discount: 0,
         stock: 7,
-        description: "کیک فروشگاهی با لایه میوه تازه و کرم رنگی، تزئینات جشن و شاد",
+        description:
+          "کیک فروشگاهی با لایه میوه تازه و کرم رنگی، تزئینات جشن و شاد",
         image_url: "/images/cakes/cake80.jpg",
         active: true,
-      }
-    
-    
+      },
     ],
     desserts: [
       {
@@ -1101,7 +1149,8 @@ const serverData = {
         description: "کوکی با تکه‌های بادام",
         image_url: "/images/cookies/cookie3.jpg",
         active: true,
-      }, {
+      },
+      {
         id: 4,
         name: "ناپلئونی بزرگ",
         category: "sweet",
@@ -1111,7 +1160,8 @@ const serverData = {
         description: "ناپلئونی با یه لایه کرم و یه لایه خامه",
         image_url: "/images/cookies/cookie4.jpg",
         active: true,
-      },{
+      },
+      {
         id: 5,
         name: "ناپلئونی کوچک",
         category: "sweet",
@@ -1121,7 +1171,8 @@ const serverData = {
         description: "ناپلئونی با یه لایه کرم و یه لایه خامه",
         image_url: "/images/cookies/cookie5.jpg",
         active: true,
-      },{
+      },
+      {
         id: 6,
         name: "نان خامه ایی بزرگ",
         category: "sweet",
@@ -1131,7 +1182,8 @@ const serverData = {
         description: "نان خامه ایی با خامه، موز و گردو",
         image_url: "/images/cookies/cookie6.jpg",
         active: true,
-      },{
+      },
+      {
         id: 7,
         name: "نان خامه ایی",
         category: "sweet",
@@ -1154,11 +1206,11 @@ const serverData = {
         active: true,
       },
     ],
-    candles: [
+    decorations: [
       {
         id: 1,
         name: "شمع تولد کوچک",
-        category: "candle",
+        category: "decoration",
         price: 5000,
         discount: 0,
         stock: 100,
@@ -1169,7 +1221,7 @@ const serverData = {
       {
         id: 2,
         name: "شمع تولد بزرگ",
-        category: "candle",
+        category: "decoration",
         price: 8000,
         discount: 0,
         stock: 80,
@@ -1177,12 +1229,10 @@ const serverData = {
         image_url: "/images/candles/candle2.jpg",
         active: true,
       },
-    ],
-    balloons: [
       {
-        id: 1,
+        id: 3,
         name: "بادکنک قرمز",
-        category: "balloon",
+        category: "decoration",
         price: 3000,
         discount: 0,
         stock: 200,
@@ -1191,9 +1241,9 @@ const serverData = {
         active: true,
       },
       {
-        id: 2,
+        id: 4,
         name: "بادکنک آبی",
-        category: "balloon",
+        category: "decoration",
         price: 3000,
         discount: 0,
         stock: 200,
@@ -1201,12 +1251,10 @@ const serverData = {
         image_url: "/images/balloons/balloon2.jpg",
         active: true,
       },
-    ],
-    fireworks: [
       {
-        id: 1,
+        id: 5,
         name: "فشفشه کوچک",
-        category: "firework",
+        category: "decoration",
         price: 20000,
         discount: 0,
         stock: 50,
@@ -1215,9 +1263,9 @@ const serverData = {
         active: true,
       },
       {
-        id: 2,
+        id: 6,
         name: "فشفشه بزرگ",
-        category: "firework",
+        category: "decoration",
         price: 35000,
         discount: 0,
         stock: 30,
@@ -1225,12 +1273,10 @@ const serverData = {
         image_url: "/images/fireworks/firework2.jpg",
         active: true,
       },
-    ],
-    hats: [
       {
-        id: 1,
+        id: 7,
         name: "کلاه تولد ساده",
-        category: "hat",
+        category: "decoration",
         price: 10000,
         discount: 0,
         stock: 80,
@@ -1239,9 +1285,9 @@ const serverData = {
         active: true,
       },
       {
-        id: 2,
+        id: 8,
         name: "کلاه تولد با طرح ستاره",
-        category: "hat",
+        category: "decoration",
         price: 12000,
         discount: 0,
         stock: 60,

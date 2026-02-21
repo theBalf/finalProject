@@ -1,5 +1,7 @@
+import cartActions from "./cart.js";
 function createcard(data, userchoose) {
   const slider = document.querySelector(`.${userchoose}`);
+  const wrapper = slider.querySelector(".swiper-wrapper");
   const imgData = data.image_url;
   const titleData = data.name;
   const descriptionData = data.description;
@@ -8,7 +10,7 @@ function createcard(data, userchoose) {
   const productID = data.id;
   //   ==========================
   const cardWraper = document.createElement("div");
-  cardWraper.classList.add("cardWraper");
+  cardWraper.classList.add("cardWraper", "swiper-slide");
   const card = document.createElement("div");
   card.classList.add("card");
   const imageContainer = document.createElement("div");
@@ -26,7 +28,7 @@ function createcard(data, userchoose) {
   priceDiv.classList.add("priceRate");
   const price = document.createElement("p");
   price.classList.add("price");
-  price.innerText = priceData;
+  price.innerText = priceData  +"   تومان" ;
   const rateArea = document.createElement("div");
   rateArea.classList.add("ratearea");
   const rateNum = document.createElement("p");
@@ -40,13 +42,18 @@ function createcard(data, userchoose) {
   const btnTxt = document.createElement("p");
   btnTxt.innerText = "خرید";
   btnTxt.classList.add("buyBtnTxt");
-  // btnTxt.classList.add(`${category}-${productID}`);
-  // console.log(`${category}-${productID}`);
-buyBtn.dataset.id = productID;
-buyBtn.dataset.category = category
+  const removeBtn = document.createElement("button");
+  removeBtn.classList.add("removeitem");
+  const removebtnIMG = document.createElement("img");
+  removebtnIMG.setAttribute("src", "../images/trash.svg");
+  removebtnIMG.classList.add("removebtnIMG");
+  buyBtn.dataset.id = productID;
+  buyBtn.dataset.category = category;
+  removeBtn.dataset.id = productID;
+  removeBtn.dataset.category = category;
   //=================================append
 
-  slider.appendChild(cardWraper);
+  wrapper.appendChild(cardWraper);
   cardWraper.appendChild(card);
   card.appendChild(imageContainer);
   imageContainer.appendChild(image);
@@ -59,6 +66,9 @@ buyBtn.dataset.category = category
   card.appendChild(btnArea);
   btnArea.appendChild(buyBtn);
   buyBtn.appendChild(btnTxt);
+  btnArea.appendChild(removeBtn);
+  removeBtn.appendChild(removebtnIMG);
+  cartActions.changeBtnUI(buyBtn);
 }
 
 export default createcard;

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@spectrum-web-components/badge": "^1.11.2"
+    "@spectrum-web-components/badge": "^1.11.2",
+    "toastify-js": "^1.12.0"
   }
 }
