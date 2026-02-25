@@ -1,5 +1,5 @@
 import cartActions from "./cart.js";
-import getdata from "./getIMGData.js";
+// import getdata from "./getIMGData.js";
 
 async function createcard(data, userchoose) {
   
@@ -10,8 +10,8 @@ async function createcard(data, userchoose) {
   const priceData = data.price;
   const category = data.category;
   const productID = data.id;
-  const imagesURL = await getdata;
-  const imgData = imagesURL[productID - 1];
+  // const imagesURL = await getdata;
+  // const imgData = imagesURL[productID - 1];
   //   ==========================
   const cardWraper = document.createElement("div");
   cardWraper.classList.add("cardWraper", "swiper-slide");
@@ -20,8 +20,8 @@ async function createcard(data, userchoose) {
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("cardImageContainer");
   const image = document.createElement("img");
-  image.setAttribute("src", imgData);
-  // image.setAttribute("src", "../images/chocolatecake.jpg");
+  // image.setAttribute("src", imgData);
+  image.setAttribute("src", "../images/chocolatecake.jpg");
   image.classList.add("cardimage");
   const title = document.createElement("h3");
   title.innerText = titleData;
