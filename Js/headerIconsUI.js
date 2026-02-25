@@ -8,10 +8,12 @@ function pageHeaderUI() {
     let isLOGIN = JSON.parse(localStorage.getItem("loginStatus"));
     console.log("loginstatus", isLOGIN);
     cartManager.cartIconCreate();
-    
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelector(".profile").addEventListener("click", (e) => {
+
+      const profileIcon = document.querySelector(".profile");
+      profileIcon.addEventListener("click", (e) => {
         e.preventDefault();
+console.log("test");
+
         loginAction.openForm(document.querySelector(".loginPage"));
       });
       document.querySelector(".closelogin").addEventListener("click", (e) => {
@@ -24,7 +26,6 @@ function pageHeaderUI() {
           e.preventDefault();
           loginAction.closeForm(document.querySelector(".loginPage"));
           loginAction.openForm(document.querySelector(".signupPage"));
-          console.log("clicked");
         });
       document.querySelector(".closeSignup").addEventListener("click", () => {
         loginAction.closeForm(document.querySelector(".signupPage"));
@@ -38,6 +39,12 @@ function pageHeaderUI() {
         accountAction.login();
       });
       //
+    const cartPageFunction = cartManager.cartPageFunctions();
+    const cartAction = cartPageFunction.cartActions();
+
+    const cartIcon = document.querySelector(".shopcart");
+    cartIcon.addEventListener("click", () => {
+      cartAction.openCart();
     });
   }
   return { headerIconsAction };

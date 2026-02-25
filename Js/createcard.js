@@ -1,13 +1,17 @@
 import cartActions from "./cart.js";
-function createcard(data, userchoose) {
+import getdata from "./getIMGData.js";
+
+async function createcard(data, userchoose) {
+  
   const slider = document.querySelector(`.${userchoose}`);
   const wrapper = slider.querySelector(".swiper-wrapper");
-  const imgData = data.image_url;
   const titleData = data.name;
   const descriptionData = data.description;
   const priceData = data.price;
   const category = data.category;
   const productID = data.id;
+  const imagesURL = await getdata;
+  const imgData = imagesURL[productID - 1];
   //   ==========================
   const cardWraper = document.createElement("div");
   cardWraper.classList.add("cardWraper", "swiper-slide");
@@ -17,6 +21,7 @@ function createcard(data, userchoose) {
   imageContainer.classList.add("cardImageContainer");
   const image = document.createElement("img");
   image.setAttribute("src", imgData);
+  // image.setAttribute("src", "../images/chocolatecake.jpg");
   image.classList.add("cardimage");
   const title = document.createElement("h3");
   title.innerText = titleData;
@@ -28,7 +33,7 @@ function createcard(data, userchoose) {
   priceDiv.classList.add("priceRate");
   const price = document.createElement("p");
   price.classList.add("price");
-  price.innerText = priceData  +"   تومان" ;
+  price.innerText = priceData + "   تومان";
   const rateArea = document.createElement("div");
   rateArea.classList.add("ratearea");
   const rateNum = document.createElement("p");

@@ -1,7 +1,9 @@
 import createcard from "./createcard.js";
 function shopcardActions() {
+  
   let extendShop = false;
   function extend(target, data, userchoose) {
+    
     const morecard = document.querySelector(`.${target}`);
     bend(data, userchoose);
     morecard.addEventListener("click", () => {

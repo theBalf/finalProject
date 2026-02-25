@@ -1,6 +1,5 @@
 import shopcardAction from "../Js/bendDataToCard.js";
 import data from "./db.js";
-import scrollH from "./horizentalScroll.js";
 import cartManager from "./cart.js";
 import headerIconsUI from "./headerIconsUI.js";
 import darkmode from "./darkmode.js";
@@ -10,6 +9,8 @@ headerIconsUI.headerIconsAction();
 darkmode;
 
 // ================================== bar actions
+const mainContainer = document.querySelector(".main");
+
 shopcardAction.extend("cakeMorecard", data.data.cakes, "cakeshop");
 shopcardAction.extend("dessertMorecard", data.data.desserts, "dessertshop");
 shopcardAction.extend("sweetMorecard", data.data.cookies, "sweetshop");
@@ -19,12 +20,4 @@ shopcardAction.extend(
   "decoration"
 );
 initSwiper();
-const cartPageFunction = cartManager.cartPageFunctions();
-const cartAction = cartPageFunction.cartActions();
-
-const cartIcon = document.querySelector(".shopcart");
-cartIcon.addEventListener("click", () => {
-  cartAction.openCart();
-});
-const mainContainer = document.querySelector(".main");
 cartManager.clickActions(mainContainer);

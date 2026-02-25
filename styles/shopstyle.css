@@ -774,6 +774,10 @@ body {
   filter: grayscale(100%) opacity(0.5);
   cursor: default;
 }
+.cartContainer.empty .shopDoneLink{
+  pointer-events: none;
+
+}
 .itemWraper {
   width: 100%;
   height: 50px;
