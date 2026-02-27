@@ -4,6 +4,7 @@ import cartManager from "./cart.js";
 import headerIconsUI from "./headerIconsUI.js";
 import darkmode from "./darkmode.js";
 import { initSwiper } from "./swiperInit.js";
+import spa from "./productSPA.js"
 
 headerIconsUI.headerIconsAction();
 darkmode;
@@ -19,5 +20,8 @@ shopcardAction.extend(
   data.data.decorations,
   "decoration"
 );
+spa()
 initSwiper();
 cartManager.clickActions(mainContainer);
+// //////////////////////////////////////////////
+

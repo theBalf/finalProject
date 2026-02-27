@@ -1,5 +1,6 @@
 import toaster from "./toastify.js";
 import serverData from "./db.js";
+// import getdata from "./getIMGData.js";
 
 function cartActions() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -205,7 +206,7 @@ function cartActions() {
           cartPage.style.display = "none";
           window.location.reload();
         });
-        
+
         const keepShopping = document.querySelector(".btn-continue");
         keepShopping.addEventListener("click", () => {
           cartPage.style.display = "none";
@@ -248,7 +249,8 @@ function cartActions() {
         console.log(item);
         const itemName = item.name;
         const itemPrice = item.price;
-        const itemImg = item.image_url;
+        // const itemImg = item.image_url;
+        const itemImg = "../images/chocolatecake.jpg";
         const itemStock = item.stock;
         const discount = item.discount;
         const count = item.count;
@@ -260,7 +262,13 @@ function cartActions() {
         itemWraper.classList.add("itemWraper");
         const hr = document.createElement("hr");
         const img = document.createElement("img");
+        console.log("itemImg", itemImg);
         img.setAttribute("src", itemImg);
+        // //////////////////////////////////////
+        //        const imagesURL =  getdata;
+        // const imgData = imagesURL[productID - 1];
+        // image.setAttribute("src", imgData);
+        //////////////////////////////////////////////////
         img.classList.add("itemImg");
         const name = document.createElement("h3");
         name.innerText = itemName;

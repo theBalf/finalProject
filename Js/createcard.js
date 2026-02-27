@@ -56,6 +56,8 @@ async function createcard(data, userchoose) {
   buyBtn.dataset.category = category;
   removeBtn.dataset.id = productID;
   removeBtn.dataset.category = category;
+  cardWraper.dataset.id = productID;
+  cardWraper.dataset.category = category;
   //=================================append
 
   wrapper.appendChild(cardWraper);
@@ -74,6 +76,7 @@ async function createcard(data, userchoose) {
   btnArea.appendChild(removeBtn);
   removeBtn.appendChild(removebtnIMG);
   cartActions.changeBtnUI(buyBtn);
+  
 }
 
 export default createcard;

@@ -1,4 +1,7 @@
 import createcard from "./createcard.js";
+import spa from "./productSPA.js"
+
+
 function shopcardActions() {
   
   let extendShop = false;
@@ -22,6 +25,9 @@ function shopcardActions() {
         txt.innerText = "دیدن همه";
       }
       bend(data, userchoose);
+      spa()
+
+      
     });
   }
   function bend(data, userchoose) {
